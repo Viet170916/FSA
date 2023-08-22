@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root">
+    <div class="pre">pre</div>
+    <div class="image-wrapper">
+        <img src="" alt="">
+    </div>
+    <div class="next">next</div>
+</div>
+<script>
+
+    const img=["img1.pnj", "img2.pnj", "img3.pnj"];
+    const item= document.createElement("img");
+    let index = 0;
+    document.querySelector(".pre").onclick = function( event ){
+        index--
+        item.src=img[index];
+        document.querySelector(".image-wrapper").replaceChildren(item);
+
+    }
+    document.querySelector(".next").onclick = function( event ){
+        index++;
+        item.src=img[index];
+        document.querySelector(".image-wrapper").replaceChildren(item);
+
+
+    }
+
+</script>
+</body>
+</html>

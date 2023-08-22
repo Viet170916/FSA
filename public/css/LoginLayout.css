@@ -1,0 +1,82 @@
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.login-layout{
+    width: 100vw;
+    height: 900px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.login-layout .login-form{
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #34495E;
+    position: relative;
+    justify-items: center;
+    width: 100vw;
+    max-width: 500px;
+    height: 64vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.2fr 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+p.notification{
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.login-layout .login-form .account-text-input{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 30px;
+    grid-template-areas:
+            "icon input-tag"
+            "p-tag p-tag";
+}
+
+.login-layout .login-form .account-text-input div:first-child{
+    grid-area: icon;
+}
+
+.login-layout .login-form .account-text-input div:nth-child(2){
+    grid-area: input-tag;
+}
+
+.login-layout .login-form .account-text-input p:last-child{
+    grid-area: p-tag;
+}
+
+.login-layout .login-form .account-text-input div{
+}
+
+.login-layout .login-form button, .button{
+    padding: 0;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 12px;
+    background-color: #dd5;
+    color: #34495E;
+}
+
+.login-layout p{
+    font-size: 0.7em;
+    color: goldenrod;
+    text-align: center;
+}
+
+.login-layout a{
+    color: #ede5d2;
+}

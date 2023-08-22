@@ -1,0 +1,76 @@
+html{
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: #fff;
+    height: 100vh;
+}
+
+.container .base-information{
+    height: 300px;
+    position: relative;
+}
+
+.container .base-information .personal-image{
+    position: relative;
+}
+
+.container .base-information .banner{
+    position: absolute;
+    background-color: #34495E;
+    height: 200px;
+    width: 100vw;
+}
+
+.container .base-information .avatar{
+    border: #fff solid 10px;
+    top: 90px;
+    left: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: #222222;
+}
+
+.container .base-information p.name{
+    color: #dd5;
+    position: absolute;
+    left: 270px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.detail-information{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.detail-information .description{
+    height: 100%;
+}
+
+.detail-information .attendance-information{
+    height: 100%;
+}
+
+.info-box{
+    display: flex;
+    padding: 20px 0 0;
+}
+
+.info-box p{
+    margin: 0 5px;
+}
+
